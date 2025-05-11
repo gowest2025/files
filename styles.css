@@ -231,15 +231,15 @@ button:nth-child(2) {
     color: #666;
     margin: 0;
 } 
-.page-header {
-    text-align: center;
-    font-size: 26px;
-    color: #333;
-    margin-top: 20px;
-    animation: slideDown 0.5s ease-out;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+.page-header {
+  text-align: center;
+  font-size: 26px;
+  color: red;
+  margin-top: 20px;
+  animation: blink 1s infinite;
 }
