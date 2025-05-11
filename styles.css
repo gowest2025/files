@@ -239,7 +239,7 @@ button:nth-child(2) {
 .page-header {
   text-align: center;
   font-size: 26px;
-  color: #007bff;
+  color: blue;
   margin-top: 20px;
   animation: blink 1s infinite;
 }
