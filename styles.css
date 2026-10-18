@@ -10,7 +10,7 @@ body {
     background-image: url("bad_dog.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
