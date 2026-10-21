@@ -6,11 +6,11 @@
 
 body {
     margin: 0;
-    padding: 0;    
-    background-image: url("bad_dog.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50px center;
+    padding: 0;
+    background-image: url("bad_dog.jpg"), url("tree.jpg");
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50px center, right center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
