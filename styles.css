@@ -250,3 +250,27 @@ button:nth-child(2) {
   margin-top: 20px;
   animation: blink 1s infinite;
 }
+
+
+/* 휴대폰 화면 설정 */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        background-image: none;
+    }
+
+    .windows-logo-layout {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .square {
+        min-width: 0;
+        min-height: 195px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
