@@ -94,8 +94,7 @@ body {
     word-break: break-all;
     border: 1px solid #9e9e9e;
     min-height: 30px;
-    color: blue;
-}
+  }
 
 .previous-operand {
     color: rgba(0, 0, 0, 0.6);
