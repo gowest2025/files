@@ -274,3 +274,16 @@ button:nth-child(2) {
         width: 100%;
     }
 }
+
+
+.square.bottom-left h2,
+.square.bottom-right h2 {
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    overflow-wrap: break-word;
+}
+
+
