@@ -276,14 +276,19 @@ button:nth-child(2) {
 }
 
 
+.square.bottom-left,
+.square.bottom-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .square.bottom-left h2,
 .square.bottom-right h2 {
     margin: 0;
-    padding: 8px;
+    padding: 10px 8px;
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
     overflow-wrap: break-word;
 }
-
-
