@@ -260,7 +260,7 @@ button:nth-child(2) {
 }
 
 
-/* 휴대폰 화면 설정 */
+/* 휴대폰 화면 설정 통합 */
 @media screen and (max-width: 600px) {
     body {
         padding-top: 20px;
@@ -275,14 +275,29 @@ button:nth-child(2) {
 
     .square {
         min-width: 0;
-        min-height: 195px;
+        min-height: auto;
+        height: auto; /* 높이를 자동(auto)으로 풀어주어 내용이 다 보이게 설정 */
+    }
+
+    .calculator {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: auto !important; /* 계산기 높이 제한 해제 (이콜 버튼까지 100% 노출) */
+        overflow: visible;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+
+    .calculator * {
+        box-sizing: border-box;
+        min-width: 0;
     }
 
     .footer {
         width: 100%;
     }
 }
-
 
 .square.bottom-left,
 .square.bottom-right {
@@ -300,29 +315,3 @@ button:nth-child(2) {
     font-size: 1.3rem;
     overflow-wrap: break-word;
 }
-
-/* 휴대폰 화면에서만 계산기 조정 */
-@media screen and (max-width: 600px) {
-   .  square {
-        min-width: 0;
-        min-height: 195px;
-        height: 195px;
-    }
-       
-  .calculator {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    height: 195px;
-    overflow: hidden;
-    margin: 0 auto 30px;
-    padding-bottom: 0;
-  }
-
-  .calculator * {
-    box-sizing: border-box;
-    min-width: 0;
-  }
-}
-
-
