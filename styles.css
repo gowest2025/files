@@ -172,11 +172,12 @@ button:nth-child(2) {
     gap: 4px;
     margin-bottom: 15px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .temp-input {
-    flex: 1;
+    flex: 1 1 0;
     min-width: 0;
     width: 0;
     padding: 8px 2px;
@@ -185,9 +186,11 @@ button:nth-child(2) {
     border-radius: 0;
     font-size: 0.75rem;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .equals {
+    margin: 0 0 auto;
     margin: 0 2px;
     font-size: 1rem;
     color: #666;
