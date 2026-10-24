@@ -318,3 +318,24 @@ button:nth-child(2) {
     min-width: 0;
   }
 }
+
+
+.temp-field {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+}
+
+.temp-field .temp-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 34px;
+}
+
+.temp-field .temp-unit {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
